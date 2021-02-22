@@ -12,6 +12,7 @@ class ProjectController extends Controller
     {
     	$projects = DB::select('select * from projects');
         return $projects;
+
     }
 
     // Projekt űrlap
@@ -38,4 +39,5 @@ class ProjectController extends Controller
     {
     	return "törölve: $id";
     }
+
 }

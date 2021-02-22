@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\StatusController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +20,4 @@ Route::get('/project/{id}', [ProjectController::class, 'show']);
 Route::post('/project', [ProjectController::class, 'create']);
 Route::put('/project/{id}', [ProjectController::class, 'edit']);
 Route::delete('/project/{id}', [ProjectController::class, 'delete']);
+Route::get('/status', [StatusController::class, 'index']);
